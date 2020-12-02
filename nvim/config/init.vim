@@ -9,7 +9,10 @@ source /root/.config/nvim/general/keys.vim
 " Neovim extensions
 call plug#begin('/root/.config/nvim/plugins')
   Plug 'morhetz/gruvbox'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Extensions configuration
 source /root/.config/nvim/gruvbox/gruvbox.vim
+source /root/.config/nvim/airline/airline.vim
