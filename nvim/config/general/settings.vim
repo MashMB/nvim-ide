@@ -97,6 +97,9 @@ set formatoptions-=cro
 " Shared clipboard
 set clipboard=unnamedplus
 
+" Spell check
+set spell spelllang=en_us,pl
+
 " Auto source while writing to init.vim
 au! BufWritePost $MYVIMRC source %      
 cmap w!! w !sudo tee %
