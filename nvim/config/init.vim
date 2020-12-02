@@ -8,6 +8,8 @@ source /root/.config/nvim/general/keys.vim
 
 " Neovim extensions
 call plug#begin('/root/.config/nvim/plugins')
+  Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Extensions configuration
+source /root/.config/nvim/gruvbox/gruvbox.vim
