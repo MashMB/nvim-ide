@@ -14,6 +14,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Extensions configuration
@@ -22,3 +23,4 @@ source /root/.config/nvim/airline/airline.vim
 source /root/.config/nvim/nerdtree/nerdtree.vim
 source /root/.config/nvim/nerdtree/nerdtree-git.vim
 source /root/.config/nvim/startify/startify.vim
+source /root/.config/nvim/fzf/fzf.vim

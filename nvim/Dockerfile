@@ -10,15 +10,16 @@ EXPOSE 8080 8081 8082 8083 8084 8085
 
 # Update repositories and install software:
 # 1. curl.
-# 2. Git.
-# 3. tig for Git visualization.
-# 4. xclip for clipboard handling.
-# 5. Python 3.
-# 6. pip for Python.
-# 7. NodeJS.
-# 8. npm for NodeJS.
-# 9. Neovim.
-RUN apt-get update && apt-get -y install curl git tig xclip python3 python3-pip nodejs npm neovim 
+# 2. ripgrep for fast file search.
+# 3. Git.
+# 4. tig for Git visualization.
+# 5. xclip for clipboard handling.
+# 6. Python 3.
+# 7. pip for Python.
+# 8. NodeJS.
+# 9. npm for NodeJS.
+# 10. Neovim.
+RUN apt-get update && apt-get -y install curl ripgrep git tig xclip python3 python3-pip nodejs npm neovim 
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim
