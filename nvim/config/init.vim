@@ -17,6 +17,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'mhinz/vim-startify'
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Extensions configuration
@@ -26,3 +27,4 @@ source /root/.config/nvim/nerdtree/nerdtree.vim
 source /root/.config/nvim/nerdtree/nerdtree-git.vim
 source /root/.config/nvim/startify/startify.vim
 source /root/.config/nvim/fzf/fzf.vim
+source /root/.config/nvim/git/fugitive.vim
