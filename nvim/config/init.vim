@@ -19,6 +19,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'
   Plug 'stsewd/fzf-checkout.vim'
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Extensions configuration
