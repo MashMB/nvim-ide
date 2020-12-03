@@ -21,3 +21,4 @@ source /root/.config/nvim/gruvbox/gruvbox.vim
 source /root/.config/nvim/airline/airline.vim
 source /root/.config/nvim/nerdtree/nerdtree.vim
 source /root/.config/nvim/nerdtree/nerdtree-git.vim
+source /root/.config/nvim/startify/startify.vim
