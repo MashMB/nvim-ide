@@ -12,9 +12,12 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Extensions configuration
 source /root/.config/nvim/gruvbox/gruvbox.vim
 source /root/.config/nvim/airline/airline.vim
 source /root/.config/nvim/nerdtree/nerdtree.vim
+source /root/.config/nvim/nerdtree/nerdtree-git.vim
