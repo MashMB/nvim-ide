@@ -2,24 +2,25 @@
 #
 # @author Maciej Bedra
 
-# Stable Debian image as base.
-FROM debian:stable-20201117
+# Debian image as base (unstable for newest software).
+FROM debian:sid-20201117
 
 # Expose some ports to host by default.
 EXPOSE 8080 8081 8082 8083 8084 8085
 
 # Update repositories and install software:
 # 1. curl.
-# 2. ripgrep for fast file search.
-# 3. Git.
-# 4. tig for Git visualization.
-# 5. xclip for clipboard handling.
-# 6. Python 3.
-# 7. pip for Python.
-# 8. NodeJS.
-# 9. npm for NodeJS.
-# 10. Neovim.
-RUN apt-get update && apt-get -y install curl ripgrep git tig xclip python3 python3-pip nodejs npm neovim 
+# 2. fzf for fast file search.
+# 3. ripgrep for fast text occurrence search.
+# 4. Git.
+# 5. tig for Git visualization.
+# 6. xclip for clipboard handling.
+# 7. Python 3.
+# 8. pip for Python.
+# 9. NodeJS.
+# 10. npm for NodeJS.
+# 11. Neovim.
+RUN apt-get update && apt-get -y install curl fzf ripgrep git tig xclip python3 python3-pip nodejs npm neovim 
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim

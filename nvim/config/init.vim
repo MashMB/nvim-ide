@@ -15,6 +15,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
   Plug 'mhinz/vim-startify'
+  Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
 call plug#end()
 
