@@ -1,0 +1,7 @@
+# Git ignore rules.
+#
+# @author Maciej Bedra
+
+### TMUX ###
+# TMUX session settings
+.tmux.sh
