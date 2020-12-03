@@ -20,6 +20,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'tpope/vim-fugitive'
   Plug 'stsewd/fzf-checkout.vim'
   Plug 'airblade/vim-gitgutter'
+  Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 " Extensions configuration
@@ -31,3 +32,4 @@ source /root/.config/nvim/startify/startify.vim
 source /root/.config/nvim/fzf/fzf.vim
 source /root/.config/nvim/git/fugitive.vim
 source /root/.config/nvim/git/fzf-checkout.vim
+source /root/.config/nvim/colorizer/colorizer.vim
