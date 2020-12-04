@@ -1,0 +1,14 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "go",
+    "js",
+    "json",
+    "sh",
+    "sql",
+    "yaml",
+    "yml"
+  ],
+  "codeLens.enable": true,
+  "yaml.format.enable": true
+}
