@@ -5,8 +5,15 @@
 # Debian image as base (unstable for newest software).
 FROM debian:sid-20201117
 
+# Set image locale.
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+
 # Expose some ports to host by default.
 EXPOSE 8080 8081 8082 8083 8084 8085
+
+# Define which Neovim COC extensions should be installed.
+ARG COC='coc-css coc-eslint coc-html coc-json coc-sh coc-sql coc-tsserver coc-yaml'
 
 # Update repositories and install software:
 # 1. curl.
@@ -45,6 +52,12 @@ COPY ./config/ /root/.config/nvim/
 
 # Install Neovim extensions.
 RUN nvim --headless +PlugInstall +qall
+
+# Create directory for Neovim COC extensions.
+RUN mkdir -p /root/.config/coc/extensions
+
+# Install Neovim COC extensions.
+RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 
 # Create directory for projects (there should be mounted from host).
 RUN mkdir -p /root/workspace

@@ -21,6 +21,7 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'stsewd/fzf-checkout.vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 call plug#end()
 
 " Extensions configuration
@@ -33,3 +34,5 @@ source /root/.config/nvim/fzf/fzf.vim
 source /root/.config/nvim/git/fugitive.vim
 source /root/.config/nvim/git/fzf-checkout.vim
 source /root/.config/nvim/colorizer/colorizer.vim
+source /root/.config/nvim/coc/coc.vim
+source /root/.config/nvim/coc/extensions.vim
