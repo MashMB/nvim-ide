@@ -106,3 +106,12 @@ Supported languages:
 5. SH
 6. SQL
 7. YAML
+
+### nvim-go
+
+Image dedicated for Go development. It is overriding the base **nvim** image. Conquer of completion is realized with:
+
+- coc-go
+- gopls
+
+Image has configured debugger for Go development with usage of **vimspector** (required **Delve** is installed also).
