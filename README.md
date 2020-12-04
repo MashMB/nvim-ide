@@ -55,21 +55,21 @@ Extensions are managed by Vim Plug. Installed and configured extensions:
 5. Fuzzy finder (search for file and text occurrence)
 7. Git integration
 8. Conquer of completion:
-  1. Code completion
-  2. Code documentation
-  3. Symbols and references highlighting
-  4. Code formatting
-  5. Code actions (optimize imports, generate, etc.)
-  6. Project scope renaming
-  7. Go to definition
-  8. Go to type definition
-  9. Go to implementation
-  10. Go to declaration
-  11. References
-  12. Quick fix
-  13. Code diagnostics
-  14. Code outline
-  15. Symbols search
+    1. Code completion
+    2. Code documentation
+    3. Symbols and references highlighting
+    4. Code formatting
+    5. Code actions (optimize imports, generate, etc.)
+    6. Project scope renaming
+    7. Go to definition
+    8. Go to type definition
+    9. Go to implementation
+    10. Go to declaration
+    11. References
+    12. Quick fix
+    13. Code diagnostics
+    14. Code outline
+    15. Symbols search
 
 Supported languages:
 
