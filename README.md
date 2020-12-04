@@ -25,6 +25,30 @@ All images build with this repository will be available on [Docker Hub](https://
 
 Detailed images description (every directory matches single image, directory name represents image name).
 
+How to run image? For testing it could be:
+
+```shell
+docker run -it mashmb/nvim:[tag] /bin/bash
+```
+
+For work suggested is **docker-compose.yml** file where configuration will be more tidy. Programming projects should
+be mounted from host to **/root/workspace/** directory:
+
+```yml
+version: '3.8'
+
+services:
+  nvim:
+    image: mashmb/nvim:[tag]
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+    volumes:
+      - [path_to_projects]:/root/workspace
+```
+
 ### nvim
 
 Base Neovim image. Software installed:
