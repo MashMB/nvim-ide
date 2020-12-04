@@ -70,6 +70,7 @@ Extensions are managed by Vim Plug. Installed and configured extensions:
     - Code diagnostics
     - Code outline
     - Symbols search
+9. Debugger
 
 Supported languages:
 
