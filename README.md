@@ -115,3 +115,16 @@ Image dedicated for Go development. It is overriding the base **nvim** image. Co
 - gopls
 
 Image has configured debugger for Go development with usage of **vimspector** (required **Delve** is installed also).
+
+### nvim-python3
+
+Image dedicated for Python3 development. It is overriding the base **nvim** image. Conquer of completion is realized with:
+
+- coc-pyright
+- coc-python
+- jedi-language-server
+
+Image has configured debugger for Python3 development with usage of **vimspector**. 
+
+All dependencies used to Python3 development are installed in virtual environment (/root/.env) so it can be easily
+modified with usage of volumes mounting. All user created virtual environments should be mounted in /root/envs.
