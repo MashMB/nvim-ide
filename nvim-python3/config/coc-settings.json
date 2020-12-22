@@ -1,0 +1,23 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "js",
+    "json",
+    "python",
+    "sh",
+    "sql",
+    "yaml",
+    "yml"
+  ],
+  "codeLens.enable": true,
+  "yaml.format.enable": true,
+  "python.pythonPath": "/root/.env/bin/python",
+  "python.venvPath": "/root/envs/",
+  "python.jediEnabled": true,
+  "python.jediPath": "/root/.env/lib/python3.9/site-packages/",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/root/.env/bin/black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "/root/.env/bin/pylint",
+  "python.autoComplete.addBrackets": true
+}
