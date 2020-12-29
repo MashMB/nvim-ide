@@ -63,12 +63,15 @@ Base Neovim image. Software installed:
 8. **pip** - for Python 3
 9. **NodeJS** - for proper Neovim work
 10. **npm** - for NodeJS
+11. **tzdata** - for default container timezone settings
 
 All components for Neovim are installed (pynvim with pip and neovim with npm).
 
 Image contains general settings and some key bindings for Neovim (saved in **/root/.config/nvim/general/**).
 
 Spell check for English and Polish is added.
+
+Europe/Warsaw as default timezone.
 
 Extensions are managed by Vim Plug. Installed and configured extensions:
 

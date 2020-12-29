@@ -27,7 +27,8 @@ ARG COC='coc-css coc-eslint coc-html coc-json coc-sh coc-sql coc-tsserver coc-ya
 # 9. NodeJS.
 # 10. npm for NodeJS.
 # 11. Neovim.
-RUN apt-get update && apt-get -y install curl fzf ripgrep git tig xclip python3 python3-pip nodejs npm neovim 
+# 12. tzdata to set default container timezone
+RUN apt-get update && apt-get -y install curl fzf ripgrep git tig xclip python3 python3-pip nodejs npm neovim tzdata
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim
@@ -64,6 +65,9 @@ RUN mkdir -p /root/workspace
 
 # Set default location after container startup.
 WORKDIR /root/workspace
+
+# Set default timezone.
+ENV TZ=Europe/Warsaw
 
 # Avoid container exit.
 CMD ["tail", "-f", "/dev/null"]
