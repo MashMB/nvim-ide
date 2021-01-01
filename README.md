@@ -119,6 +119,30 @@ Image dedicated for Go development. It is overriding the base **nvim** image. Co
 
 Image has configured debugger for Go development with usage of **vimspector** (required **Delve** is installed also).
 
+### nvim-jdk8
+
+Image dedicated for Oracle Java 8 development. It is overriding the base **nvim** image. Conquer of completion is
+realized with:
+
+- coc-java
+- [Eclipse JDT Language Server](https://download.eclipse.org/jdtls/milestones/0.57.0/) (for Oravle Java 8, version 
+0.57.0 is required)
+
+Image has configured debugger for Oracle Java 8 with usage of **vimspector** and 
+[coc-java-debug](https://github.com/dansomething/coc-java-debug).
+
+Additionally **coc-xml** is installed for proper XML files handling with Java.
+
+**NOTE**: to use [Lombok](https://projectlombok.org/) it should be downloaded and mounted to container. Nextly it should
+be configured in **coc-settings.json**:
+
+```json
+{
+  "java.jdt.ls.vmargs": "-javaagent:[path]/lombok.jar"
+  // "java.jdt.ls.vmargs": "-javaagent:[path]/lombok.jar -Xbootclasspath/a:[path]/lombok.jar" // older Java versions
+}
+```
+
 ### nvim-python3
 
 Image dedicated for Python3 development. It is overriding the base **nvim** image. Conquer of completion is realized with:
