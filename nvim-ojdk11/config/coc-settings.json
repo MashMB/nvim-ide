@@ -1,0 +1,15 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "java",
+    "javascript",
+    "json",
+    "sh",
+    "sql",
+    "yaml"
+  ],
+  "codeLens.enable": true,
+  "yaml.format.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.implementationsCodeLens.enabled": true
+}
