@@ -1,0 +1,21 @@
+# Docker file for Neovim Oracle Java 8 development.
+#
+# @author Maciej Bedra
+
+# Base Neovim image.
+FROM mashmb/nvim:1.0.0
+
+# Install Open JDK 11.
+RUN apt-get update && apt-get -y install openjdk-11-jdk 
+
+# Neovim COC extensions for Java development.
+ARG COC='coc-java coc-java-debug coc-xml'
+
+# Install Neovim COC extensions.
+RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+
+# Copy Neovim configuration files.
+COPY ./config/ /root/.config/nvim/
+
+# Avoid container exit.
+CMD ["tail", "-f", "/dev/null"]
