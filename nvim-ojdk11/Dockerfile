@@ -1,4 +1,4 @@
-# Docker file for Neovim Oracle Java 8 development.
+# Docker file for Neovim Open JDK 11 (Java 11) development.
 #
 # @author Maciej Bedra
 

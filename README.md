@@ -110,6 +110,16 @@ Supported languages:
 6. SQL
 7. YAML
 
+### nvim-flutter
+
+Image dedicated for Flutter development. It is overriding the base **nvim** image. Conquer of completion is realized 
+with:
+
+- coc-flutter
+- dart-vim-plugin (syntax highlighting)
+
+This image contains raw Flutter installation (no Android SDK, etc.).
+
 ### nvim-go
 
 Image dedicated for Go development. It is overriding the base **nvim** image. Conquer of completion is realized with:
