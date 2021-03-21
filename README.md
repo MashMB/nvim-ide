@@ -120,6 +120,14 @@ with:
 
 This image contains raw Flutter installation (no Android SDK, etc.).
 
+For Android development follow the [tutorial](https://dev.to/enriquem/android-sdk-without-studio-3idg). There are two
+ways to run Android emulator:
+
+1. Install and configure `xauth` ([tutorial](https://www.geeksforgeeks.org/running-gui-applications-on-docker-in-linux/)), 
+nextly install emulator in container and run it (remember about Docker privileged mode - without it there will be no 
+hardware acceleration required by emulator).
+2. Install Android SDK on host and in Docker container, connect to emulator on host over `adb`.
+
 ### nvim-go
 
 Image dedicated for Go development. It is overriding the base **nvim** image. Conquer of completion is realized with:
