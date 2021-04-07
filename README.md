@@ -143,6 +143,14 @@ be configured in **coc-settings.json**:
 }
 ```
 
+### nvim-latex
+
+Image dedicated for LaTeX files edition. It is overriding the base **nvim** image. Conquer of completion is realized with:
+
+- coc-texlab
+
+PDF output file can be built with `:CocCommand latex.Build [file.pdf]`
+
 ### nvim-ojdk11
 
 Image dedicated for OpenJDK 11 (Java 11) development. It is overriding the base **nvim** image. Conquer of completion is
