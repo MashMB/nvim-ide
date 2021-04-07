@@ -2,10 +2,6 @@
 #
 # @author Maciej Bedra
 
-### TMUX ###
-# TMUX session settings
-.tmux.sh
-
 ### Docker ###
 # Test compose files
 **/docker-compose.yml
