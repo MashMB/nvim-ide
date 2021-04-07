@@ -17,7 +17,7 @@ RUN cd /root/go/TMP && go mod init tmp && go get golang.org/x/tools/gopls@latest
 RUN rm -rf /root/go/TMP
 
 # Install Neovim COC extensions.
-RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
 # Install Go language debugger adapter.
 RUN cd /root/.config/nvim/plugins/vimspector && python3 install_gadget.py --enable-go && go get -u github.com/go-delve/delve/cmd/dlv

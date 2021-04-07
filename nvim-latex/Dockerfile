@@ -6,13 +6,13 @@
 FROM mashmb/nvim:1.0.0
 
 # Install LaTeX.
-RUN apt-get update && apt-get -y install texlive-full
+RUN apt-get update && apt-get -y install texlive-latex-extra
 
 # Neovim COC extensions for LaTeX edition.
 ARG COC='coc-texlab'
 
 # Install Neovim COC extensions.
-RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
 # Copy Neovim configuration files.
 COPY ./config/ /root/.config/nvim/

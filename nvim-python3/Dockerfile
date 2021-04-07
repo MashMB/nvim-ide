@@ -18,7 +18,7 @@ RUN cd /root && python3 -m venv .env
 RUN /root/.env/bin/pip install -r /root/requirements.txt
 
 # Install Neovim COC extensions.
-RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
 # Install Python language debugger adapter.
 RUN cd /root/.config/nvim/plugins/vimspector && python3 install_gadget.py --enable-python

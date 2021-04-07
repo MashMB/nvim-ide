@@ -12,7 +12,7 @@ RUN apt-get update && apt-get -y install openjdk-11-jdk
 ARG COC='coc-java coc-java-debug coc-xml'
 
 # Install Neovim COC extensions.
-RUN cd /root/.config/coc/extensions && npm install $COC --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
 # Copy Neovim configuration files.
 COPY ./config/ /root/.config/nvim/
