@@ -86,7 +86,7 @@ nmap <leader>cq <Plug>(coc-fix-current)
 nmap <leader>ce :CocList diagnostics<CR>
 
 " Key binding for code outline
-nmap <M-F7> :CocList outline<CR>
+nmap <M-7> :CocList outline<CR>
 
 " Key binding used to find symbol
 nmap <leader>cs :CocList -I symbols<CR>
