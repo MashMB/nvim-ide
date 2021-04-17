@@ -60,6 +60,9 @@ RUN mkdir -p /root/.config/coc/extensions
 # Install Neovim COC extensions.
 RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
+# Bash aliases
+COPY ./home/ /root/
+
 # Create directory for projects (there should be mounted from host).
 RUN mkdir -p /root/workspace
 

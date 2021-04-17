@@ -119,6 +119,14 @@ setting in **coc-settings.json**:
 
 Completion will be available on shortcut **Ctrl + Space**.
 
+Additionally there are some Bash aliases:
+
+```
+alias cl="clear"
+alias ls="ls -al"
+alias du="du -h"
+```
+
 ### nvim-flutter
 
 Image dedicated for Flutter development. It is overriding the base **nvim** image. Conquer of completion is realized 
