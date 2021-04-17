@@ -110,6 +110,15 @@ Supported languages:
 6. SQL
 7. YAML
 
+For users that type really fast on keyboard, Conquer of Completion can be too slow. You can disable auto completion with 
+setting in **coc-settings.json**:
+
+```
+"suggest.autoTrigger": "none"
+```
+
+Completion will be available on shortcut **Ctrl + Space**.
+
 ### nvim-flutter
 
 Image dedicated for Flutter development. It is overriding the base **nvim** image. Conquer of completion is realized 
