@@ -125,6 +125,12 @@ Additionally there are some Bash aliases:
 alias cl="clear"
 alias ls="ls -al"
 alias du="du -h"
+alias gs="git status"
+alias gb="git branch -a"
+alias gp="git push origin"
+alias gps="git push --set-upstream origin"
+alias gc="git checkout"
+alias gcb="git checkout -b"
 ```
 
 ### nvim-flutter
