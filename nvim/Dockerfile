@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Debian image as base (unstable for newest software).
-FROM debian:sid-20201117
+FROM debian:sid-20210408
 
 # Set image locale.
 ENV LANG en_US.UTF-8
