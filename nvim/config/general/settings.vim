@@ -72,6 +72,9 @@ set number relativenumber
 " Highlight current line
 set cursorline
 
+" Smooth scroll
+set so=999
+
 " Max line length
 set colorcolumn=120
 
