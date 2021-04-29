@@ -20,6 +20,7 @@
 alias cl="clear"
 alias ls="ls -al"
 alias du="du -h"
+alias lg="lazygit"
 alias gs="git status"
 alias gb="git branch -a"
 alias gp="git push origin"

@@ -15,6 +15,11 @@ EXPOSE 8080 8081 8082 8083 8084 8085
 # Define which Neovim COC extensions should be installed.
 ARG COC='coc-css coc-eslint coc-html coc-json coc-sh coc-sql coc-tsserver coc-yaml'
 
+# Lazygit variables
+ARG LG='lazygit'
+ARG LG_GITHUB='https://github.com/jesseduffield/lazygit/releases/download/v0.28.1/lazygit_0.28.1_Linux_x86_64.tar.gz'
+ARG LG_ARCHIVE='lazygit.tar.gz'
+
 # Update repositories and install software:
 # 1. curl.
 # 2. fzf for fast file search.
@@ -28,7 +33,7 @@ ARG COC='coc-css coc-eslint coc-html coc-json coc-sh coc-sql coc-tsserver coc-ya
 # 10. npm for NodeJS.
 # 11. Neovim.
 # 12. tzdata to set default container timezone
-RUN apt-get update && apt-get -y install curl fzf ripgrep git tig xclip python3 python3-pip nodejs npm neovim tzdata
+RUN apt-get update && apt-get -y install curl fzf ripgrep git xclip python3 python3-pip nodejs npm neovim tzdata
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim
@@ -59,6 +64,11 @@ RUN mkdir -p /root/.config/coc/extensions
 
 # Install Neovim COC extensions.
 RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
+
+# Install Lazygit from binary
+RUN mkdir -p /root/TMP && cd /root/TMP && curl -L -o $LG_ARCHIVE $LG_GITHUB
+RUN cd /root/TMP && tar xzvf $LG_ARCHIVE && mv $LG /usr/bin/
+RUN rm -rf /root/TMP
 
 # Bash aliases
 COPY ./home/ /root/
