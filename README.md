@@ -57,7 +57,7 @@ Base Neovim image. Software installed:
 2. **fzf** - for fast files search
 3. **ripgrep** - for fast text occurrence search
 4. **Git** - Git support inside container
-5. **tig** - Git visualization inside terminal
+5. **Lazygit** - Git visualization inside terminal
 6. **xclip** - clipboard handling
 7. **Python 3** - for proper Neovim work
 8. **pip** - for Python 3
@@ -125,6 +125,7 @@ Additionally there are some Bash aliases:
 alias cl="clear"
 alias ls="ls -al"
 alias du="du -h"
+alias lg="lazygit"
 alias gs="git status"
 alias gb="git branch -a"
 alias gp="git push origin"
@@ -227,3 +228,13 @@ Image has configured debugger for Python3 development with usage of **vimspector
 
 All dependencies used to Python3 development are installed in virtual environment (/root/.env) so it can be easily
 modified with usage of volumes mounting. All user created virtual environments should be mounted in /root/envs.
+
+For more flexible workspace manging, *pyrightconfig.json* file can be created and mounted in */root/* directory. Example 
+configuration used to avoid import errors in workspace without *env*:
+
+```json
+{
+  "reportMissingImports": false,
+  "reportGeneralTypeIssues": false
+}
+```
