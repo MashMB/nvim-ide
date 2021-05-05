@@ -19,7 +19,7 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 
 " Editor tabs navigation
-nnoremap <TAB> :tabNext<CR>
+nnoremap <TAB> :tabnext<CR>
 nnoremap <S-TAB> :tabprevious<CR>
 
 " Completion
