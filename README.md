@@ -123,7 +123,7 @@ Additionally there are some Bash aliases:
 
 ```
 alias cl="clear"
-alias ls="ls -al"
+alias ls="ls -al --color"
 alias du="du -h"
 alias lg="lazygit"
 alias gs="git status"
@@ -133,6 +133,8 @@ alias gps="git push --set-upstream origin"
 alias gc="git checkout"
 alias gcb="git checkout -b"
 ```
+
+Neovim background is transparent. It can be disabled in Neovim configuration (.config/nvim/general/settings.vim line **85**).
 
 ### nvim-flutter
 

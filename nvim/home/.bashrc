@@ -18,7 +18,7 @@
 # alias mv='mv -i'
 
 alias cl="clear"
-alias ls="ls -al"
+alias ls="ls -al --color"
 alias du="du -h"
 alias lg="lazygit"
 alias gs="git status"

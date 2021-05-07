@@ -81,6 +81,9 @@ set colorcolumn=120
 " Background color
 set background=dark
 
+" Transparent background
+autocmd VimEnter * hi Normal ctermbg=none
+
 " Show TAB's
 set showtabline=2
 
