@@ -81,7 +81,7 @@ Extensions are managed by Vim Plug. Installed and configured extensions:
 4. Welcome screen
 5. Fuzzy finder (search for file and text occurrence)
 7. Git integration
-8. Hex colors preview support (disabled by default)
+8. Hex colors preview support
 9. Conquer of completion:
     - Code completion
     - Code documentation
