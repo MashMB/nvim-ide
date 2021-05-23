@@ -17,6 +17,11 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/doc/fzf/examples/completion.bash
+
+export FZF_DEFAULT_OPTS="--reverse --no-height"
+
 alias cl="clear"
 alias ls="ls -al --color"
 alias du="du -h"
