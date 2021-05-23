@@ -57,13 +57,14 @@ Base Neovim image. Software installed:
 2. **fzf** - for fast files search
 3. **ripgrep** - for fast text occurrence search
 4. **Git** - Git support inside container
-5. **Lazygit** - Git visualization inside terminal
-6. **xclip** - clipboard handling
-7. **Python 3** - for proper Neovim work
-8. **pip** - for Python 3
-9. **NodeJS** - for proper Neovim work
-10. **npm** - for NodeJS
-11. **tzdata** - for default container timezone settings
+5. **tree** - files tree visualization
+6. **Lazygit** - Git visualization inside terminal
+7. **xclip** - clipboard handling
+8. **Python 3** - for proper Neovim work
+9. **pip** - for Python 3
+10. **NodeJS** - for proper Neovim work
+11. **npm** - for NodeJS
+12. **tzdata** - for default container timezone settings
 
 All components for Neovim are installed (pynvim with pip and neovim with npm).
 

@@ -24,16 +24,17 @@ ARG LG_ARCHIVE='lazygit.tar.gz'
 # 1. curl.
 # 2. fzf for fast file search.
 # 3. ripgrep for fast text occurrence search.
-# 4. Git.
-# 5. tig for Git visualization.
-# 6. xclip for clipboard handling.
-# 7. Python 3.
-# 8. pip for Python.
-# 9. NodeJS.
-# 10. npm for NodeJS.
-# 11. Neovim.
-# 12. tzdata to set default container timezone
-RUN apt-get update && apt-get -y install curl fzf ripgrep git xclip python3 python3-pip nodejs npm neovim tzdata
+# 4. tree for files tree visualization.
+# 5. Git.
+# 6. Lazygit for Git visualization.
+# 7. xclip for clipboard handling.
+# 8. Python 3.
+# 9. pip for Python.
+# 10. NodeJS.
+# 11. npm for NodeJS.
+# 12. Neovim.
+# 13. tzdata to set default container timezone
+RUN apt-get update && apt-get -y install curl fzf ripgrep tree git xclip python3 python3-pip nodejs npm neovim tzdata
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim
