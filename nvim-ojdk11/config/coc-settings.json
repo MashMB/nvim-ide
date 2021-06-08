@@ -6,7 +6,8 @@
     "json",
     "sh",
     "sql",
-    "yaml"
+    "yaml",
+    "xml"
   ],
   "codeLens.enable": true,
   "yaml.format.enable": true,
