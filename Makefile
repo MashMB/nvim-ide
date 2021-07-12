@@ -9,10 +9,11 @@ nvim-jdk8 = mashmb/nvim-jdk8:1.0.0
 nvim-latex = mashmb/nvim-latex:1.0.0
 nvim-ojdk11 = mashmb/nvim-ojdk11:1.0.0
 nvim-python3 = mashmb/nvim-python3:1.0.0
+nvim-ts = mashmb/nvim-ts:1.0.0
 
-all-build = build-nvim build-nvim-flutter build-nvim-go build-nvim-jdk8 build-nvim-latex build-nvim-ojdk11 build-nvim-python3
-all-push = push-nvim push-nvim-flutter push-nvim-go push-nvim-jdk8 push-nvim-latex push-nvim-ojdk11 push-nvim-python3
-all-clean = clean-nvim clean-nvim-flutter clean-nvim-go clean-nvim-jdk8 clean-nvim-latex clean-nvim-ojdk11 clean-nvim-python3
+all-build = build-nvim build-nvim-flutter build-nvim-go build-nvim-jdk8 build-nvim-latex build-nvim-ojdk11 build-nvim-python3 build-nvim-ts
+all-push = push-nvim push-nvim-flutter push-nvim-go push-nvim-jdk8 push-nvim-latex push-nvim-ojdk11 push-nvim-python3 push-nvim-ts
+all-clean = clean-nvim clean-nvim-flutter clean-nvim-go clean-nvim-jdk8 clean-nvim-latex clean-nvim-ojdk11 clean-nvim-python3 clean-nvim-ts
 
 all: $(all-build) $(all-push) $(all-clean)
 
@@ -47,6 +48,10 @@ build-nvim-python3:
 	echo "--- Building $(nvim-python3) image ---"
 	cd nvim-python3 && docker build -t $(nvim-python3) .
 
+build-nvim-ts:
+	echo "--- Building $(nvim-ts) image ---"
+	cd nvim-ts && docker build -t $(nvim-ts) .
+
 push-nvim: login
 	echo "--- Pushing $(nvim) image ---"
 	docker push $(nvim)
@@ -75,6 +80,10 @@ push-nvim-python3: login
 	echo "--- Pushing $(nvim-python3) image ---"
 	docker push $(nvim-python3)
 
+push-nvim-ts: login
+	echo "--- Pushing $(nvim-ts) image ---"
+	docker push $(nvim-ts)
+
 clean-nvim:
 	echo "--- Removing $(nvim) image ---"
 	docker image rm -f $(nvim)
@@ -102,3 +111,7 @@ clean-nvim-ojdk11:
 clean-nvim-python3:
 	echo "--- Removing $(nvim-python3) image ---"
 	docker image rm -f $(nvim-python3)
+
+clean-nvim-ts:
+	echo "--- Removing $(nvim-ts) image ---"
+	docker image rm -f $(nvim-ts)
