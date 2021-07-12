@@ -241,3 +241,12 @@ configuration used to avoid import errors in workspace without *env*:
   "reportGeneralTypeIssues": false
 }
 ```
+
+### nvim-ts
+
+Image dedicated for Typescript development. It is overriding the base **nvim** image. Conquer of completion is realized 
+with:
+
+- coc-tsserver
+
+Image has configured debugger for Typescript development with usage of **vimspector**. 

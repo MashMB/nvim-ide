@@ -8,7 +8,7 @@ FROM mashmb/nvim:1.0.0
 # Install Typescript SDK.
 RUN apt-get update && apt-get -y install watchman && npm install -g typescript
 
-# Install Python language debugger adapter.
+# Install Node.js debugger adapter.
 RUN cd /root/.config/nvim/plugins/vimspector && python3 install_gadget.py --force-enable-node
 
 # Copy Neovim configuration files.
