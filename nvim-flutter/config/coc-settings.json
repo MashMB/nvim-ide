@@ -2,6 +2,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "dart",
+    "html",
     "javascript",
     "json",
     "sh",
