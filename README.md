@@ -120,12 +120,16 @@ setting in **coc-settings.json**:
 
 Completion will be available on shortcut **Ctrl + Space**.
 
+File can be saved once without formatting with **noa w** command.
+
 Additionally there are some Bash aliases:
 
 ```
 alias cl="clear"
 alias ls="ls -al --color"
 alias du="du -h"
+alias vi="nvim"
+alias vim="nvim"
 alias lg="lazygit"
 alias gs="git status"
 alias gb="git branch -a"
