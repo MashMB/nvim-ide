@@ -6,8 +6,8 @@
 FROM mashmb/nvim:1.0.0
 
 # Name of Java JDK 8 archive, installation directory and Java Language Server archive.
-ARG JDK='jdk-8u271-linux-x64.tar.gz'
-ARG JDK_DIR='jdk1.8.0_271'
+ARG JDK='jdk-8u301.tar.gz'
+ARG JDK_DIR='jdk1.8.0_301'
 ARG JDT='jdt-language-server-0.57.0-202006172108.tar.gz'
 
 # Neovim COC extensions for Java development.
