@@ -21,6 +21,9 @@ All images build with this repository will be available on [Docker Hub](https://
   <img src="img/files-tree.png"/>
 </p>
 
+**WARNING**: all images on [Docker Hub](https://hub.docker.com/u/mashmb) with **dev** tag are using the newest stable 
+version of Neovim installed from source.
+
 ## Images
 
 Detailed images description (every directory matches single image, directory name represents image name).
@@ -56,8 +59,8 @@ Base Neovim image. Software installed:
 1. **curl** - for downloading stuff
 2. **fzf** - for fast files search
 3. **ripgrep** - for fast text occurrence search
-4. **Git** - Git support inside container
-5. **tree** - files tree visualization
+4. **tree** - files tree visualization
+5. **Git** - Git support inside container
 6. **Lazygit** - Git visualization inside terminal
 7. **xclip** - clipboard handling
 8. **Python 3** - for proper Neovim work
@@ -65,6 +68,7 @@ Base Neovim image. Software installed:
 10. **NodeJS** - for proper Neovim work
 11. **npm** - for NodeJS
 12. **tzdata** - for default container timezone settings
+13. Everything needed to install Neovim from source
 
 All components for Neovim are installed (pynvim with pip and neovim with npm).
 
