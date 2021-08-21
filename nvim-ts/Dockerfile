@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Base Neovim image.
-FROM mashmb/nvim:1.0.0
+FROM mashmb/nvim:dev
 
 # Install Typescript SDK.
 RUN apt-get update && apt-get -y install watchman && npm install -g typescript

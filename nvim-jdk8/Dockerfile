@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Base Neovim image.
-FROM mashmb/nvim:1.0.0
+FROM mashmb/nvim:dev
 
 # Name of Java JDK 8 archive, installation directory and Java Language Server archive.
 ARG JDK='jdk-8u301.tar.gz'

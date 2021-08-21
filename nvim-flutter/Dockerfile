@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Base Neovim image.
-FROM mashmb/nvim:1.0.0
+FROM mashmb/nvim:dev
 
 # Neovim COC extensions for Flutter development.
 ARG COC='coc-flutter'
@@ -23,9 +23,6 @@ RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
 # Copy Neovim configuration files.
 COPY ./config/ /root/.config/nvim/
-
-# Install Neovim extensions.
-RUN nvim --headless +PlugInstall +qall
 
 # Avoid container exit.
 CMD ["tail", "-f", "/dev/null"]

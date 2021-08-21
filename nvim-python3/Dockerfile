@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Base Neovim image.
-FROM mashmb/nvim:1.0.0
+FROM mashmb/nvim:dev
 
 # Neovim COC extensions for Python3 development.
 ARG COC='coc-pyright coc-python'
