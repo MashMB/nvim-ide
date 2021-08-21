@@ -2,14 +2,14 @@
 #
 # @author Maciej Bedra
 
-nvim = mashmb/nvim:1.0.0
-nvim-flutter = mashmb/nvim-flutter:1.0.0
-nvim-go = mashmb/nvim-go:1.0.0
-nvim-jdk8 = mashmb/nvim-jdk8:1.0.0
-nvim-latex = mashmb/nvim-latex:1.0.0
-nvim-ojdk11 = mashmb/nvim-ojdk11:1.0.0
-nvim-python3 = mashmb/nvim-python3:1.0.0
-nvim-ts = mashmb/nvim-ts:1.0.0
+nvim = mashmb/nvim:dev
+nvim-flutter = mashmb/nvim-flutter:dev
+nvim-go = mashmb/nvim-go:dev
+nvim-jdk8 = mashmb/nvim-jdk8:dev
+nvim-latex = mashmb/nvim-latex:dev
+nvim-ojdk11 = mashmb/nvim-ojdk11:dev
+nvim-python3 = mashmb/nvim-python3:dev
+nvim-ts = mashmb/nvim-ts:dev
 
 all-build = build-nvim build-nvim-flutter build-nvim-go build-nvim-jdk8 build-nvim-latex build-nvim-ojdk11 build-nvim-python3 build-nvim-ts
 all-push = push-nvim push-nvim-flutter push-nvim-go push-nvim-jdk8 push-nvim-latex push-nvim-ojdk11 push-nvim-python3 push-nvim-ts
