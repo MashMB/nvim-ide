@@ -35,5 +35,5 @@ alias gps="git push --set-upstream origin"
 alias gc="git checkout"
 alias gcb="git checkout -b"
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_271
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301
 export PATH=$JAVA_HOME/bin:$PATH
