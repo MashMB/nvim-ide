@@ -17,4 +17,22 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+source /usr/share/doc/fzf/examples/completion.bash
+source /usr/share/doc/fzf/examples/key-bindings.bash
+
+export FZF_DEFAULT_OPTS="--reverse --no-height"
+
+alias cl="clear"
+alias ls="ls -al --color"
+alias du="du -h"
+alias vi="nvim"
+alias vim="nvim"
+alias lg="lazygit"
+alias gs="git status"
+alias gb="git branch -a"
+alias gp="git push origin"
+alias gps="git push --set-upstream origin"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+
 export PATH=/root/flutter/bin:$PATH
