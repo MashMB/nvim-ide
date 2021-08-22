@@ -13,6 +13,9 @@ ARG JDT='jdt-language-server-0.57.0-202006172108.tar.gz'
 # Neovim COC extensions for Java development.
 ARG COC='coc-java coc-java-debug coc-xml'
 
+# Install JDK8 Debian requirements.
+RUN apt-get update && apt-get install -y libc6-i386
+
 # Create temporal directory for Java JDK 8 archive.
 RUN mkdir -p /root/TMP
 
