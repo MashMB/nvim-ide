@@ -3,7 +3,7 @@
 # @author Maciej Bedra
 
 # Debian image as base (unstable for newest software).
-FROM debian:sid-20210816
+FROM debian:sid-20211220
 
 # Set image locale.
 ENV LANG en_US.UTF-8
@@ -18,7 +18,7 @@ ARG COC='coc-css coc-eslint coc-html coc-json coc-sh coc-sql coc-tsserver coc-ya
 
 # Lazygit variables
 ARG LG='lazygit'
-ARG LG_GITHUB='https://github.com/jesseduffield/lazygit/releases/download/v0.29/lazygit_0.29_Linux_x86_64.tar.gz'
+ARG LG_GITHUB='https://github.com/jesseduffield/lazygit/releases/download/v0.31.4/lazygit_0.31.4_Linux_x86_64.tar.gz'
 ARG LG_ARCHIVE='lazygit.tar.gz'
 
 # Update repositories and install software:
@@ -35,7 +35,7 @@ ARG LG_ARCHIVE='lazygit.tar.gz'
 # 11. npm for NodeJS.
 # 12. tzdata to set default container timezone.
 # 13. Everything needed to install Neovim from source.
-RUN apt-get update && apt-get -y install curl fzf ripgrep tree git xclip python3 python3-pip nodejs npm tzdata ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+RUN apt-get update && apt-get -y install curl fzf ripgrep tree git xclip python3 python3-pip nodejs npm tzdata ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config zip unzip
 
 # Cooperate Neovim with Python 3.
 RUN pip3 install pynvim
