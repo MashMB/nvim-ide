@@ -227,6 +227,29 @@ be configured in **coc-settings.json**:
 }
 ```
 
+### nvim-ojdk17
+
+Image dedicated for OpenJDK 17 (Java 17) development. It is overriding the base **nvim** image. Conquer of completion is
+realized with:
+
+- coc-java
+- [Eclipse JDT Language Server](https://download.eclipse.org/jdtls/)
+
+Image has configured debugger for OpenJDK 11 with usage of **vimspector** and 
+[coc-java-debug](https://github.com/dansomething/coc-java-debug).
+
+Additionally **coc-xml** is installed for proper XML files handling with Java.
+
+**NOTE**: to use [Lombok](https://projectlombok.org/) it should be downloaded and mounted to container. Nextly it should
+be configured in **coc-settings.json**:
+
+```json
+{
+  "java.jdt.ls.vmargs": "-javaagent:[path]/lombok.jar"
+  // "java.jdt.ls.vmargs": "-javaagent:[path]/lombok.jar -Xbootclasspath/a:[path]/lombok.jar" // older Java versions
+}
+```
+
 ### nvim-python3
 
 Image dedicated for Python3 development. It is overriding the base **nvim** image. Conquer of completion is realized with:
