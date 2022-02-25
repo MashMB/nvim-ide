@@ -17,7 +17,7 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
-source /usr/share/doc/fzf/examples/completion.bash
+source /usr/share/bash-completion/completions/fzf
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
 export FZF_DEFAULT_OPTS="--reverse --no-height"

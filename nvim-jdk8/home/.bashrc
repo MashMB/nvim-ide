@@ -17,7 +17,7 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
-source /usr/share/doc/fzf/examples/completion.bash
+source /usr/share/bash-completion/completions/fzf
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
 export FZF_DEFAULT_OPTS="--reverse --no-height"
@@ -35,5 +35,5 @@ alias gps="git push --set-upstream origin"
 alias gc="git checkout"
 alias gcb="git checkout -b"
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_321
 export PATH=$JAVA_HOME/bin:$PATH
