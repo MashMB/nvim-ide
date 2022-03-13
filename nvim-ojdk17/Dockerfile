@@ -1,11 +1,11 @@
-# Docker file for Neovim Open JDK 11 (Java 11) development.
+# Docker file for Neovim Open JDK 17 (Java 17) development.
 #
 # @author Maciej Bedra
 
 # Base Neovim image.
 FROM mashmb/nvim:dev
 
-# Install Open JDK 11.
+# Install Open JDK 17.
 RUN apt-get update && apt-get -y install openjdk-17-jdk 
 
 # Neovim COC extensions for Java development.
