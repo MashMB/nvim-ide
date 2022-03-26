@@ -60,7 +60,7 @@ Base Neovim image. Software installed:
 2. **fzf** - for fast files search
 3. **ripgrep** - for fast text occurrence search
 4. **tree** - files tree visualization
-5. **Git** - Git support inside container
+5. **Git** - Git support inside container (with GIT Flow)
 6. **Lazygit** - Git visualization inside terminal
 7. **xclip** - clipboard handling
 8. **Python 3** - for proper Neovim work
@@ -135,12 +135,7 @@ alias du="du -h"
 alias vi="nvim"
 alias vim="nvim"
 alias lg="lazygit"
-alias gs="git status"
-alias gb="git branch -a"
-alias gp="git push origin"
-alias gps="git push --set-upstream origin"
-alias gc="git checkout"
-alias gcb="git checkout -b"
+alias gf="git flow"
 ```
 
 Neovim background is transparent. It can be disabled in Neovim configuration (.config/nvim/general/settings.vim line **85**).
