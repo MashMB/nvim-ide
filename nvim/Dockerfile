@@ -21,6 +21,10 @@ ARG LG='lazygit'
 ARG LG_GITHUB='https://github.com/jesseduffield/lazygit/releases/download/v0.31.4/lazygit_0.31.4_Linux_x86_64.tar.gz'
 ARG LG_ARCHIVE='lazygit.tar.gz'
 
+# GIT Flow variables
+ARG GIT_FLOW_GITHUB='https://github.com/petervanderdoes/gitflow-avh.git'
+ARG GIT_FLOW_DIR='gitflow-avh'
+
 # Update repositories and install software:
 # 1. curl.
 # 2. fzf for fast file search.
@@ -73,9 +77,18 @@ RUN mkdir -p /root/.config/coc/extensions
 # Install Neovim COC extensions.
 RUN cd /root/.config/coc/extensions && npm install $COC --global --only=prod
 
+# Create TMP directory
+RUN mkdir -p /root/TMP
+
 # Install Lazygit from binary
-RUN mkdir -p /root/TMP && cd /root/TMP && curl -L -o $LG_ARCHIVE $LG_GITHUB
+RUN cd /root/TMP && curl -L -o $LG_ARCHIVE $LG_GITHUB
 RUN cd /root/TMP && tar xzvf $LG_ARCHIVE && mv $LG /usr/bin/
+
+# Install GIT Flow
+RUN cd /root/TMP && git clone $GIT_FLOW_GITHUB
+RUN cd /root/TMP/$GIT_FLOW_DIR && git checkout master && make install
+
+# Delete TMP directory
 RUN rm -rf /root/TMP
 
 # Bash aliases

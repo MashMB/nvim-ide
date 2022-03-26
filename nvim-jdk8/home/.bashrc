@@ -28,12 +28,7 @@ alias du="du -h"
 alias vi="nvim"
 alias vim="nvim"
 alias lg="lazygit"
-alias gs="git status"
-alias gb="git branch -a"
-alias gp="git push origin"
-alias gps="git push --set-upstream origin"
-alias gc="git checkout"
-alias gcb="git checkout -b"
+alias gf="git flow"
 
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_321
 export PATH=$JAVA_HOME/bin:$PATH
